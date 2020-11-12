@@ -1,16 +1,21 @@
 var el_up = document.getElementById("GFG_UP");
-
+var date = document.getElementById("date");
+var source = document.getElementById("source");
 var list;
 
-el_up.innerHTML = "Click on the button to create the "
-    + "table from the JSON data.<br><br>";
+el_up.innerHTML = "Тестовое задание для тестировщика<br><br>";
 
 function GFG_FUN() {
-    var date = document.getElementById("date");
-    if (date.value === "1"){
+    if (date.value === "02.02.2020" && source.value === "Источник1") {
         list = JSON.parse(data1);
-    } else {
+    } else if (date.value === "05.12.2020" && source.value === "Источник1") {
         list = JSON.parse(data2);
+    } else if (date.value === "02.02.2020" && source.value === "Источник2") {
+        list = JSON.parse(data3);
+    } else if (date.value === "05.12.2020" && source.value === "Источник2") {
+        list = JSON.parse(data4);
+    } else {
+        list = [{"error":"Некорректные входные данные"}];
     }
 
     var cols = [];
