@@ -1,9 +1,6 @@
-var el_up = document.getElementById("GFG_UP");
 var date = document.getElementById("date");
 var source = document.getElementById("source");
 var list;
-
-el_up.innerHTML = "Тестовое задание для тестировщика<br><br>";
 
 function loadReport() {
     if (date.value === "02.02.2020" && source.value === "Источник1") {
