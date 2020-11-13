@@ -2,48 +2,55 @@
 <html>
 
 <head>
-	<title>
-		Тестовая отчётность
-	</title>
+    <title>
+        Тестовая отчётность
+    </title>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script type="text/javascript" src="data1.json" charset="utf-8"></script>
-	<script type="text/javascript" src="data2.json" charset="utf-8"></script>
-	<script type="text/javascript" src="data3.json" charset="utf-8"></script>
-	<script type="text/javascript" src="data4.json" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script charset="utf-8" src="data/data1.json" type="text/javascript"></script>
+    <script charset="utf-8" src="data/data2.json" type="text/javascript"></script>
+    <script charset="utf-8" src="data/data3.json" type="text/javascript"></script>
+    <script charset="utf-8" src="data/data4.json" type="text/javascript"></script>
 </head>
 
-<body style = "text-align:center;">
+<body style="text-align:center;">
 
-	<h1 style = "color:green;">
-		Отчёт
-	</h1>
+<h1 style="color:green;">
+    Отчёт
+</h1>
 
-	<p id = "GFG_UP" style =
-			"font-size: 15px; font-weight: bold;">
-	</p>
-	<select id="date">
-		<option>02.02.2020</option>
-		<option>05.12.2020</option>
-	</select>
-	<select id="source">
-		<option>Источник1</option>
-		<option>Источник2</option>
-	</select>
-	<button onclick = "loadReport()">
-		Построить отчёт
-	</button>
-	<button onclick = "loadErr()">
-		Выгрузить в PDF
-	</button>
+<p id="GFG_UP" style=
+        "font-size: 15px; font-weight: bold;">
+</p>
 
-	<br><br>
+<span style="display:inline-block">
+    <label style="display:block">Дата отчёта</label>
+    <select id="date">
+        <option>02.02.2020</option>
+        <option>05.12.2020</option>
+    </select>
+</span>
+<span style="display:inline-block">
+<label style="display:block">Источник</label>
+    <select id="source">
+        <option>Источник1</option>
+        <option>Источник2</option>
+    </select>
+</span>
+<button onclick="loadReport()">
+    Построить отчёт
+</button>
+<button onclick="loadErr()">
+    Выгрузить в PDF
+</button>
 
-	<table id="table" align = "center"></table>
+<br><br>
 
-	<script src=index.js charset="utf-8">
+<table align="center" id="table"></table>
 
-	</script>
+<script charset="utf-8" src=index.js>
+
+</script>
 </body>
 
 </html> 
